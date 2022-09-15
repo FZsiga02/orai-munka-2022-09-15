@@ -1,7 +1,7 @@
 const lista = []
 
-function hozzaad(){
-    let szam
+
+export function hozzaad(szam){
     if (szam<0) {
         console.log("A megadott szám kisebb mint 0!")
     }else{
@@ -9,12 +9,12 @@ function hozzaad(){
     }
 }
 
-function atlag(){
+export function atlag(){
     let osszeg = 0;
     let darab = 0;
-    for (i=0; i<list.length; i++){
+    for (let i=0; i<lista.length; i++){
         osszeg+=lista[i]
         darab++
     }
-    console.log(osszeg/darab)
+    return osszeg/darab
 }
